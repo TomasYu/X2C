@@ -449,12 +449,12 @@ public class View implements ITranslator {
     }
 
     private boolean setMinWidth(StringBuilder stringBuilder, String value) {
-        stringBuilder.append(String.format("%s.setMinWidth(%s);\n", getObjName(), getDimen(value)));
+        stringBuilder.append(String.format("%s.setMinimumWidth(%s);\n", getObjName(), getDimen(value)));
         return true;
     }
 
     private boolean setMinHeight(StringBuilder stringBuilder, String value) {
-        stringBuilder.append(String.format("%s.setMinHeight(%s);\n", getObjName(), getDimen(value)));
+        stringBuilder.append(String.format("%s.setMinimumHeight(%s);\n", getObjName(), getDimen(value)));
         return true;
     }
 
