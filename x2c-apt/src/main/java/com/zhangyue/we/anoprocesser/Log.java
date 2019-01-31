@@ -24,4 +24,10 @@ public class Log {
             sMessager.printMessage(Diagnostic.Kind.ERROR, msg);
         }
     }
+
+    public static void i(String msg){
+        if (sMessager != null) {
+            sMessager.printMessage(Diagnostic.Kind.NOTE,msg);
+        }
+    }
 }

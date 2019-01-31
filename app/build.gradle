@@ -24,16 +24,16 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
     implementation 'com.android.support.constraint:constraint-layout:2.0.0-alpha2'
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
 
     implementation project(':app-module')
 
-//        annotationProcessor project(':x2c-apt')
-//        implementation project(':x2c-lib')
+        annotationProcessor project(':x2c-apt')
+        implementation project(':x2c-lib')
 
-    annotationProcessor 'com.zhangyue.we:x2c-apt:1.1.1'
-    implementation 'com.zhangyue.we:x2c-lib:1.0.6'
+//    annotationProcessor 'com.zhangyue.we:x2c-apt:1.1.1'
+//    implementation 'com.zhangyue.we:x2c-lib:1.0.6'
 }
